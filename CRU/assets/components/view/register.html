@@ -1,0 +1,37 @@
+<div id="registerPage" ng-controller="registerPage">
+    <div class="container">
+        <div class="searchContainer animated fadeIn">
+            <h1 class="light">Details</h1>
+<!--            <form ng-submit="onSubmit()">-->
+                <div class="form-group">
+                    <input type="text" class="form-control" ng-model="person.date" placeholder="Date">
+                    <div class="form-message"></div>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" ng-model="person.name" placeholder="Name">
+                    <div class="form-message"></div>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" ng-model="person.address" placeholder="Address">
+                    <div class="form-message"></div>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" ng-model="person.age" placeholder="Age">
+                    <div class="form-message"></div>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" ng-model="person.fileNo" placeholder="File Number">
+                    <div class="form-message"></div>
+                </div> 
+                <div class="form-group">
+                    <input type="text" class="form-control" ng-model="person.registerNo" placeholder="Register Number">
+                    <div class="form-message"></div>
+                </div>   
+<!--                <button class="submitBtn" ng-click="onSubmit(person)">Submit</button>-->
+                <button ng-click="onSubmit()">Submit</button>
+<!--            </form>-->
+        </div>  
+        {{msgAngular}}
+        {{msgJson}}
+    </div>    
+</div> 

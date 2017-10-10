@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Triangle</title>
+    <style type="text/css">
+         body{
+            margin: 0px;
+            overflow: hidden;
+        }
+        #myTriangle{
+            height: 100vh;
+            width: 100vw;
+        }  	
+        #headIntro{
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -146.5px;            
+            padding: 0 20px;
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            font-family: sans-serif;
+        }
+
+        #headIntro h1,
+        #headIntro h3{
+            text-transform: uppercase;
+            font-size: 80px;
+            font-weight: 700;
+            letter-spacing: 0.015em;
+        }
+
+        #headIntro h3{
+            font-size: 20px;           
+        }
+
+        @media screen and (max-width:1000px) {
+            .headIntro{         
+                padding: 0px;
+            }            
+            .headIntro h1{
+                font-size: 50px;
+            }
+        }        
+    </style>
+    <script type="text/javascript" src="assets/js/TweenLite.min.js"></script>
+    <script type="text/javascript" src="assets/js/EasePack.min.js"></script>
+    <script type="text/javascript" src="assets/js/rAF.js"></script>   
+    <script type="text/javascript" src="assets/js/triangle.js"></script>        
+</head>
+<body>
+	<canvas id="myTriangle"></canvas>
+<!--     <div id="headIntro">
+        <h1>My Particle</h1>
+        <h3>Ha Ha Fuck You All Bitch</h3>
+        <a href="index.html">Particle Ground</a>
+        <a href="triangle.html">Triangle</a>
+    </div> -->
+</body>
+</html>

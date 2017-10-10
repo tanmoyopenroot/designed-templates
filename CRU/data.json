@@ -1,0 +1,42 @@
+[
+    {
+        "date": "4th January 2016",
+        "name": "Tanmoy Bhowmik",
+        "address": "Bagdogra",            
+        "age": "19",
+        "fileNo": "fl001",
+        "registerNo": "rn001"       
+    },       
+    {
+        "date": "3th January 2016",
+        "name": "Abhishek Das",
+        "address": "Bagdogra",            
+        "age": "20",
+        "fileNo": "fl002",
+        "registerNo": "rn002"        
+    },  
+    {
+        "date": "2th January 2016",
+        "name": "Sudip Barman",
+        "address": "Bagdogra",            
+        "age": "19",
+        "fileNo": "fl003",
+        "registerNo": "rn003"            
+    },  
+    {
+        "date": "1th January 2016",
+        "name": "Anik Karmakar",
+        "address": "Bagdogra",            
+        "age": "20",
+        "fileNo": "fl004",
+        "registerNo": "rn004"        
+    },          
+    {
+        "date": "4th January 2016",
+        "name": "Tanmoy Bhowmik",
+        "address": "Bagdogra",            
+        "age": "19",
+        "fileNo": "fl001",
+        "registerNo": "rn001"            
+    }        
+]

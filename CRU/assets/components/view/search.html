@@ -1,0 +1,27 @@
+<div id="searchPage" ng-controller="searchPage">
+    <div class="container" ng-init="showList=false">
+        <div class="searchContainer animated fadeIn">
+            <h1 class="light">Search</h1>
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="searchPeople" ng-change="(searchPeople=='') ? showList=false : showList=true" placeholder="Search People">
+<!--                <input type="text" class="form-control" ng-model="searchPeople" ng-click="showList=true" placeholder="Search People">-->
+                <div class="form-message"></div>
+            </div>
+        </div>    
+    
+        <div class="viewContainer">
+<!--            <h1 class="light">Result</h1>-->
+            <ul class="list-unstyled" ng-show="showList">
+                <li ng-repeat="person in personInfo | filter:searchPeople | orderBy:'name'" class="animated fadeIn">
+                    <h1 class="light">Persons Detail</h1>
+                    Date: {{person.date}} </br>
+                    Name: {{person.name}} </br>
+                    Address: {{person.address}} </br>
+                    Age: {{person.age}} </br>
+                    File No: {{person.fileNo}} </br>
+                    Registration No: {{person.registerNo}}
+                </li>
+            </ul>
+        </div>
+    </div>    
+</div> 
