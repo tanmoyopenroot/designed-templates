@@ -1,0 +1,137 @@
+<div id="homePage" ng-controller="homePage">
+    <section id="headContainer">
+        <div class="introHead">
+            <h1 class="headParts">
+                <span class="part1">aps</span>
+                <span class="part2">bengdubi</span>
+            </h1>
+            <h3 class="subParts light">
+                A Lorem Ipsum egy egyszerû szövegrészlete, szövegutánzata a betûszedõ és nyomdaiparnak.
+            </h3> 
+            <a class="readMore">READ MORE</a>
+            <div class="downBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 270" enable-background="new 0 0 270 270" id="arrow" class="svg-arrow">
+                    <path stroke="#fff" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none" d="M115.87 95.5L154 135l-38.13 39.5" id="arrow"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+    <section id="principalDesk">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="light white textLeft">OCTOBER 2016</h1>
+                    <div class="quoteIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="quote" class="svg-quote">
+                            <title>quote</title>
+                            <path d="M.66 1.73h8.86v11.16A8.93 8.93 0 0 1 7 19.71a10.07 10.07 0 0 1-5.76 2.57v-3.9C4 17.94 5.62 16 5.62 12.89v-2h-5V1.73zm22.68 0v11.16a8.93 8.93 0 0 1-2.53 6.82A10.08 10.08 0 0 1 15 22.27v-3.9c2.92-.44 4.43-2.39 4.43-5.49v-2h-5V1.73h8.86z" fill="#fff"></path>
+                        </svg>
+                    </div>
+                    <h2 class="light white textLeft">From Principal Desk</h2>
+                    <div class="principalQuotes">
+                        <p class="white textLeft">A Lorem Ipsum egy egyszerû szövegrészlete, szövegutánzata a betûszedõ és nyomdaiparnak. A Lorem Ipsum az 1500-as évek óta standard szövegrészletként szolgált az iparban; mikor egy ismeretlen nyomdász összeállította a betûkészletét és egy példa-könyvet vagy szöveget nyomott papírra, ezt használta. Nem csak 5 évszázadot élt túl, de az elektronikus betûkészleteknél is változatlanul megmaradt. Az 1960-as években népszerûsítették a Lorem Ipsum részleteket magukbafoglaló Letraset lapokkal, és legutóbb softwarekkel mint például az Aldus Pagemaker. </p>
+                    </div> <a class="white light readPost textLeft">Read Post From Facebook</a> </div>
+                <div class="col-md-6">
+                    <div class="imgContainer">
+                        <div class="imgHolder">
+                            <img src="assets/image/cards/card1.jpg" class="img-responsive" />
+                        </div>
+                        <div class="imgDetail">
+                            <h3>Name</h3> </br>
+                            </br>
+                            <h5 class="light blue textLeft">Principal / APSB</h5> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="recent">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>News</h1>
+                    <div class="recentNews">
+                        <div class="news" ng-repeat="news in recentNews">
+                            <p ng-bind-html="news.date"></p>
+                            <p ng-bind-html="news.newsInfo"></p>
+                            <p ng-bind-html="news.more"></p>
+<!--
+                            <h2 class="light  blue">{{news.date}}</h2>
+                            <h5 class="light">{{news.newsInfo}}</h5>
+                            <a class="light learn">{{news.more}}</a>
+-->
+                        </div>
+                    </div> <a href="#" class="btn newsBtn">ALL NEWS</a> </div>
+                <div class="col-md-6">
+                    <h1>Activities</h1>
+                    <div class="recentAct">
+                        <div class="acts" ng-repeat="acts in recentAct">
+                            <p ng-bind-html="acts.date"></p>
+                            <p ng-bind-html="acts.actInfo"></p>
+                            <p ng-bind-html="acts.more"></p>
+                        </div>
+                    </div> <a href="#" class="btn actBtn">ALL ACTIVITIES</a> </div>
+            </div>
+        </div>
+    </section>
+    <section id="homeInfo">
+<!--
+        <div class="container-fluid">
+            <div class="row">
+                <div ng-repeat="info in homeInfo">
+                    <div container-Box data="info" class="col-md-6"></div>
+                    <div container-Box data="test" class="col-md-6"></div>
+                </div>
+            </div>
+        </div>
+-->
+        <div class="container">
+            <article class="boxContainer leftFlex">
+                <span class="imgBox">
+                    <img src="assets/image/cards/card1.jpg" class="img-responsive" />
+                </span>
+                <div class="boxContent">
+                    <h2 class="light">INTEGER VITAE LIBERO ACRISUS EGESTAS PLACERAT SOLLICITUDIN</h2>
+                    <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est.</p>
+                    <div class="boxBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 270" enable-background="new 0 0 270 270" id="arrow" class="svg-arrow">
+                            <path stroke="#555" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none" d="M115.87 95.5L154 135l-38.13 39.5" id="arrow"></path>
+                        </svg>
+                    </div>                
+                </div>
+            </article>
+            
+            <article class="boxContainer rightFlex">
+                <span class="imgBox">
+                    <img src="assets/image/cards/card2.jpg" class="img-responsive" />
+                </span>
+                <div class="boxContent">
+                    <h2 class="light">INTEGER VITAE LIBERO ACRISUS EGESTAS PLACERAT SOLLICITUDIN</h2>
+                    <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est.</p>
+                    <div class="boxBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 270" enable-background="new 0 0 270 270" id="arrow" class="svg-arrow">
+                            <path stroke="#555" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none" d="M115.87 95.5L154 135l-38.13 39.5" id="arrow"></path>
+                        </svg>
+                    </div>                
+                </div>
+            </article>
+            
+            
+            <article class="boxContainer leftFlex">
+                <span class="imgBox">
+                    <img src="assets/image/cards/card3.jpg" class="img-responsive" />
+                </span>
+                <div class="boxContent">
+                    <h2 class="light">INTEGER VITAE LIBERO ACRISUS EGESTAS PLACERAT SOLLICITUDIN</h2>
+                    <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est.</p>
+                    <div class="boxBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 270" enable-background="new 0 0 270 270" id="arrow" class="svg-arrow">
+                            <path stroke="#555" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none" d="M115.87 95.5L154 135l-38.13 39.5" id="arrow"></path>
+                        </svg>
+                    </div>                
+                </div>
+            </article>
+        </div>
+    </section>    
+</div> 

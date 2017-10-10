@@ -1,0 +1,22 @@
+<div id="knowPage" ng-controller="knowPage">
+    <section id="knowContainer">
+        <div class="knowHead">
+            <div class="container">
+                <h1 class="white">Knowledge</h1>
+                <p class="white">A Lorem Ipsum egy egyszerû szövegrészlete, szövegutánzata a betûszedõ és nyomdaiparnak. A Lorem Ipsum az 1500-as évek óta standard szövegrészletként szolgált az iparban; mikor egy ismeretlen nyomdász összeállította a betûkészletét és egy példa-könyvet vagy szöveget nyomott papírra, ezt használta.</p>
+                <div class="downBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 270" enable-background="new 0 0 270 270" id="arrow" class="svg-arrow">
+                        <path stroke="#fff" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none" d="M115.87 95.5L154 135l-38.13 39.5" id="arrow"></path>
+                    </svg>
+                </div>            
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div ng-repeat="know in knowInfo">
+                    <div container-Box data="know" class="col-md-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div> 

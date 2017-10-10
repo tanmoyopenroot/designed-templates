@@ -1,0 +1,780 @@
+body {
+    font-family: 'Segoe UI';
+}
+
+.light {
+    font-weight: 300;
+}
+
+bold {
+    font-weight: 400;
+}
+
+.white {
+    color: #fff;
+}
+
+.blue {
+    color: #00b0e5;
+}
+
+.green {
+    color: #87cc26;
+}
+
+.textLeft {
+    text-align: left;
+}
+
+.textRight {
+    text-align: right;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.btn:hover {
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.2s;
+}
+
+.boxBtn:hover,
+.downBtn:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);    
+}
+
+
+/*Naviagtion*/
+
+#navigationBar {
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+    background-color: #fff;
+    z-index: 9000;
+    position: fixed;
+    top: -121px;
+    right: -155px;
+    border-bottom-left-radius: 70%;
+    -webkit-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+    box-shadow: -6px 3px 26px 0px rgba(0, 0, 0, 0.11);
+}
+
+#navigationBar .list-unstyled {
+    position: absolute;
+    bottom: 33%;
+    left: 43%;
+    font-size: 32px;
+    line-height: 60px;
+    display: none;
+}
+
+#navigationBar .list-unstyled a,
+#navigationBar .list-unstyled a:hover {
+    color: #00b0e5;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#navigationBar .list-unstyled .active::before {
+    content: '>';
+    color: #00b0e5;
+    height: 50px;
+    width: 50px;
+    margin-left: -25px
+}
+
+#navigationBar .list-unstyled .animated:first-child {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+#navigationBar .list-unstyled .animated:nth-child(2) {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+#navigationBar .list-unstyled .animated:nth-child(3) {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+#navigationBar .list-unstyled .animated:nth-child(4) {
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+#navigationBar .list-unstyled .animated:last-child {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.navBtn {
+    height: 70px;
+    width: 70px;
+    background-color: #00b0e5;
+    z-index: 9999;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+    padding: 13px 20px;
+    cursor: pointer;
+}
+
+.stripe {
+    border: 2px solid #fff;
+    display: block;
+    margin: 9px 0;
+}
+
+.navBtn .stripe:nth-child(2) {
+    width: 20px;
+}
+
+
+
+
+
+
+
+/*HomePage*/
+/*Head Container*/
+
+#headContainer {
+    height: 100vh;
+    background-image: url(../image/back.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#homeInfo {
+    background-color: #EEE;
+}
+
+#principalDesk {
+    background-color: #00b0e5;
+    color: #fff;
+    padding: 10em 0em;
+}
+
+
+/*Head Container*/
+
+.introHead {
+    width: 100%;
+    text-align: center;
+    color: #666;
+    position: absolute;
+    top: 20%;
+}
+
+.introHead::after {
+    content: '';
+    text-align: center;
+    width: 40vh;
+    height: 1px;
+    color: #bbb;
+}
+
+.headParts {
+    margin: 0px;
+}
+
+.headParts .part1 {
+    font-size: 120px;
+    color: #87cc26;
+}
+
+.headParts .part2 {
+    font-size: 120px;
+    color: #f2c900;
+}
+
+.subParts {
+    width: 50%;
+    margin: 2em auto;
+    font-size: 20px;
+}
+
+.downBtn {
+    margin: 10vh auto 15px;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    transform: rotate(90deg);
+    border-radius: 50%;
+    border: 3px solid #fff;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;    
+}
+
+.readMore,
+.readMore:hover,
+.readMore:active {
+    border-radius: 24px;
+    font-size: 13.6px;
+    height: 50px;
+    z-index: 1;
+    background-color: #00b0e5;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 14px 5vw;
+}
+
+
+/*Principal Desk*/
+
+.quoteIcon {
+    max-width: 200px;
+}
+
+.principalQuotes {
+    margin: 3em 0em;
+}
+
+.readPost {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.readPost::before {
+    content: '>';
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    color: #00b0e5;
+    padding: 10px 20px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+#principalDesk a,
+#principalDesk a:hover {
+    color: #fff;
+}
+
+.imgContainer {
+    margin-top: 45%;
+}
+
+.imgHolder {
+    height: 36vh;
+    width: 100%;
+    background-color: #f2c900;
+}
+
+.imgDetail {
+    min-width: 80%;
+    background-color: #fff;
+    padding: 20px 50px;
+    float: right;
+    cursor: pointer;
+/*    margin-top: -40px;*/
+    height: 250px;
+    box-shadow: -6px 3px 26px 0px rgba(0, 0, 0, 0.11);
+}
+
+.imgDetail h3 {
+    font-size: 31px;
+    font-weight: 700;
+    color: #666;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.imgDetail h3:hover {
+    color: #00b0e5;
+}
+
+.imgDetail h3::before {
+    width: 12vw;
+    margin-bottom: 24px;
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: #666;
+    box-shadow: -6px 3px 26px 0px rgba(0, 0, 0, 0.11);
+}
+
+
+/*Recent*/
+
+#recent {
+    padding: 6em 8em;
+}
+
+#recent h1 {
+    margin: 58px;
+    font-weight: 500;
+    color: #666;
+}
+
+#recent .news,
+#recent .acts {
+    margin: 5em 4em;
+    border-bottom: 1px solid #bbb;
+}
+
+#recent .news a,
+#recent .acts a {
+    color: inherit;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+#recent .news a::after,
+#recent .acts a::after {
+    content: '>';
+    color: #fff;
+    margin-left: 10px;
+    border-radius: 50%;
+    padding: 5px 10px;
+}
+
+#recent .news a::after {
+    background-color: #00b0e5;
+}
+
+#recent .acts a::after {
+    background-color: #87cc26;
+}
+
+#recent .news a:hover {
+    color: #00b0e5;
+}
+
+#recent .acts a:hover {
+    color: #87cc26;
+}
+
+.newsBtn,
+.newsBtn:active {
+    border-radius: 24px;
+    font-size: 13.6px;
+    height: 50px;
+    z-index: 1;
+    background-color: #00b0e5;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 14px 20%;
+    width: 60%;
+}
+
+.actBtn,
+.actBtn:active {
+    border-radius: 24px;
+    font-size: 13.6px;
+    height: 50px;
+    z-index: 1;
+    background-color: #87cc26;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 14px 20%;
+    width: 60%;
+}
+
+.newsBtn:hover,
+.actBtn:hover {
+    color: #fff;
+}
+
+
+/*Home Info*/
+
+#homeInfo .container-fluid {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+#homeInfo .container-fluid .col-md-4 {
+    padding: 85px 30px;
+}
+
+.imgBoxDetail {
+    background-color: #fff;
+    padding: 20px 50px;
+    width: 100%;
+    height: 250px;
+    box-shadow: -6px 3px 26px 0px rgba(0, 0, 0, 0.11);
+}
+
+.imgBoxDetail h3 {
+    font-size: 40px;
+}
+
+
+#homeInfo .container{
+    padding: 8em 0em;
+}
+
+.boxContainer{
+    display: flex;
+    margin-bottom: 6em;
+    background-color: #fff;
+    color: #555;
+    box-shadow: -6px 3px 26px 0px rgba(0, 0, 0, 0.11);    
+}
+
+.boxContent{
+    padding: 2em 3em 0.1em 3em;
+    width: 52%;    
+}
+
+.leftFlex{
+    flex-direction: row;
+}
+
+.rightFlex{
+    flex-direction: row-reverse;
+}
+
+.boxBtn{
+    margin: 10vh auto 25px;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid #555;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;    
+}
+
+
+/*Activity Page*/
+#actContainer{
+    background-color: #f2c900;
+    background-image: url(../image/backYellow.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.actHead{
+    text-align: center;
+}
+
+.actHead .container{
+    padding: 200px 0px; 
+}
+
+.actHead .container > h1{
+    font-size: 140px;
+}
+
+.actHead .container > p{
+    font-size: 20px;
+    padding: 30px;    
+}
+
+#actContainer .container-fluid {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+#actContainer .container-fluid .col-md-4 {
+    padding: 85px 30px;
+}
+
+
+
+
+
+
+/*Knowledge*/
+#knowContainer{
+    background-color: #00b0e5;
+    background-image: url(../image/backBlue.jpg);
+    background-attachment: fixed;
+    background-size: cover; 
+    background-repeat: no-repeat;    
+}
+
+.knowHead{
+    text-align: center;
+}
+
+.knowHead .container{
+    padding: 200px 0px; 
+}
+
+.knowHead .container > h1{
+    font-size: 140px;
+}
+
+.knowHead .container > p{
+    font-size: 20px;
+    padding: 30px;    
+}
+
+#knowContainer .container-fluid {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+#knowContainer .container-fluid .col-md-4 {
+    padding: 85px 30px;
+}
+
+
+
+
+/*Network*/
+#netContainer{
+    background-color: rgb(135, 204, 38); 
+    background-image: url(../image/backGreen.jpg);    
+    background-attachment: fixed;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    height: 100vh;
+}
+
+.netHead{
+    text-align: center;
+}
+
+.netHead .container{
+    padding: 200px 0px; 
+}
+
+.netHead .container > h1{
+    font-size: 140px;
+}
+
+.netHead .container > p{
+    font-size: 20px;
+    padding: 30px;
+}
+
+
+#netContainer .container-fluid {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+#netContainer .container-fluid .col-md-4 {
+    padding: 85px;
+}
+
+
+#netInfo{
+    padding: 200px 0px; 
+}
+
+
+
+
+/*Footer*/
+
+.addContainer {
+    background-color: rgb(126, 190, 35);
+    padding: 5vh 7vw;
+    margin: 0px auto;
+    color: #fff;
+}
+
+.addressCont {
+    background-color: rgb(135, 204, 38);
+    color: #fff;
+    padding: 5vh 7vw;
+    margin: 0px auto;
+}
+
+.addressCont a,
+.addressCont a:hover {
+    color: #fff;
+}
+
+.copyRight {
+    background-color: #7ab822;
+    padding: 5vh 7vw;
+}
+
+.social .list-inline {
+    float: right;
+}
+
+.social li {
+    width: 70px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+
+/*Media Query*/
+
+
+/*Head Container*/
+
+@media screen and (max-width:1000px) {
+    .headParts .part1 {
+        font-size: 90px;
+    }
+    .headParts .part2 {
+        font-size: 90px;
+    }
+    .subParts{
+        font-size: 18px
+    }
+}
+
+@media screen and (max-width:700px) {
+    .headParts .part1 {
+        font-size: 80px;
+    }
+    .headParts .part2 {
+        font-size: 80px;
+    }
+    .subParts{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .headParts .part1 {
+        font-size: 60px;
+    }
+    .headParts .part2 {
+        font-size: 60px;
+    }
+}
+
+
+/*Principal Desk*/
+
+@media screen and (max-width:1000px) {
+    .imgContainer {
+        margin-top: 20%;
+    }
+}
+
+
+/*Recent*/
+
+@media screen and (max-width:1400px) {
+    #recent {
+        padding: 0;
+        margin: 8em 0em;
+    }
+}
+
+@media screen and (max-width:700px) {
+    #recent h1 {
+        margin: 58px 0px;
+    }
+    #recent .news,
+    #recent .acts {
+        margin: 5em 1em;
+    }
+}
+
+/*Home Info*/
+
+@media screen and (max-width:1200px) {
+    .leftFlex{
+        flex-direction: column;
+    }
+
+    .rightFlex{
+        flex-direction: column-reverse;
+    }
+    .boxContent {
+        width: auto;
+    }    
+}
+
+
+
+/*Activity*/
+@media screen and (max-width:1000px) {
+    .actHead .container > h1{
+        font-size: 90px;
+    }
+    .actHead .container > p{
+        font-size: 18px;
+    }
+}
+
+    
+@media screen and (max-width:700px) {
+    .actHead .container > h1{
+        font-size: 80px;
+    }
+    .actHead .container > p{
+        font-size: 15px;
+    }
+}
+
+
+
+
+/*Knowledge*/
+@media screen and (max-width:1000px) {
+    .knowHead .container > h1{
+        font-size: 90px;
+    }
+    .knowHead .container > p{
+        font-size: 18px;
+    }
+}
+
+    
+@media screen and (max-width:700px) {
+    .knowHead .container > h1{
+        font-size: 80px;
+    }
+    .knowHead .container > p{
+        font-size: 15px;
+    }
+}
+
+
+
+/*Network*/
+@media screen and (max-width:1000px) {
+    .netHead .container > h1{
+        font-size: 90px;
+    }
+    .netHead .container > p{
+        font-size: 18px;
+    }
+}
+
+    
+@media screen and (max-width:700px) {
+    .netHead .container > h1{
+        font-size: 80px;
+    }
+    .netHead .container > p{
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+/*Footer*/
+
+@media screen and (max-width:991px) {
+    .social .list-inline {
+        float: left;
+        margin: 2em 0em;
+    }
+}

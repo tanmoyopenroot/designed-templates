@@ -1,0 +1,50 @@
+.zeroPointHalf {
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+}
+
+.zeroPoint {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+}
+
+.zeroPointFull {
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+}
+
+
+.one {
+    -webkit-animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+.onePointHalf{
+    -webkit-animation-duration: 1.2s;
+    animation-delay: 1.2s;    
+}
+
+.onePoint {
+    -webkit-animation-duration: 1.5s;
+    animation-delay: 1.5s;
+}
+
+.two {
+    -webkit-animation-duration: 2s;
+    animation-delay: 2s;
+}
+
+.twoPointHalf{
+    -webkit-animation-duration: 2.2s;
+    animation-delay: 2.2s;    
+}
+
+.twoPoint {
+    -webkit-animation-duration: 2.5s;
+    animation-delay: 2.5s;
+}
+
+.three {
+    -webkit-animation-duration: 3s;
+    animation-delay: 3s;
+}

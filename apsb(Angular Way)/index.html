@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>APSB</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate/animate.min.css">
+    <!--    -->
+    <link rel="stylesheet" type="text/css" href="assets/css/myAnimate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/myStyle.css">
+    <!--        -->
+    <script type="text/javascript" src="assets/js/jquery/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/angular/angular.min.js"></script>
+    <script type="text/javascript" src="assets/js/angular/angular-route.js"></script>
+    <script type="text/javascript" src="assets/js/angular/angular-sanitize.min.js"></script>
+    <!---->
+    <script type="text/javascript" src="assets/js/myScript.js"></script>
+    <script type="text/javascript" src="assets/components/controller/controller.js"></script>
+</head>
+
+<body ng-app="apsbApp">
+    <!--    Navigation-->
+    <header id="navigationBar">
+        <ul class="list-unstyled">
+            <li class="animated"><a class="active" href="#/home">Home</a></li>
+            <li class="animated"><a href="#/activities">Activities</a></li>
+            <li class="animated"><a href="#/knowledge">Knowledge</a></li>
+            <li class="animated"><a href="#/network">Network</a></li>
+            <li class="animated"><a href="#/">Contact us</a></li>
+        </ul>
+    </header>
+    <div class="navBtn"> 
+        <span class="stripe"></span> 
+        <span class="stripe"></span> 
+        <span class="stripe"></span> 
+    </div>
+    <!--    View-->
+    <ng-view></ng-view>
+    <!--    Footer-->
+    <div ng-include src="'assets/components/include/footer.html'"></div>
+</body>
+
+</html>
