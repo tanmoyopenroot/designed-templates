@@ -1,0 +1,244 @@
+body{
+    padding-top: 85px;
+    text-align: center;
+    color: dimgrey;
+    font-family: 'Segoe UI';
+    position: relative;
+
+}
+
+.noSelect{
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+}
+
+.text_light_small{
+    text-transform: none;
+    color: #ff8700;
+    font-size: 20px;
+    font-weight: 100; 
+}
+
+.text_small{
+    text-transform: none;
+    color: #ff8700;
+    font-size: 17px;
+    font-weight: 100; 
+}
+
+.text_light{
+    text-transform: none;
+    color: darkslategrey;
+    font-size: 35px;
+    font-weight: 300;    
+}
+
+.text_light_content{
+    text-transform: none;
+    color: #ff8700;
+    font-size: 25px;
+    font-weight: 100;
+    margin: 2em;   
+}
+
+
+/*Navigation*/
+
+nav .list-inline .glyphicon{
+    font-size: 2em;
+    padding: 1em 0em 0em 1em;
+}
+
+.glyphicon-align-justify{
+    color: rgba(255,135,0,0.5);
+}
+
+.glyphicon-align-justify:hover{
+    color: #ff8700;   
+    cursor: pointer;
+    -webkit-transition: 0.3s color ease;
+    -moz-transition: 0.3s color ease;    
+    -o-transition: 0.3s color ease; 
+    transition: 0.3s color ease; 
+}
+
+.floatLeft{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.shitLeft{
+    position: absolute;
+    top: 0;
+    left: 0;   
+    height: 90px;
+    width: 100%;
+    margin: 0px;
+    background-color: #ff8700;
+    padding-top: 2em;
+    z-index: 9999;
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;    
+    -o-transition: 0.3s all ease; 
+    transition: 0.3s all ease;  
+}
+
+.shitLeft>li{
+    color: #fff;
+    text-transform: none;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 10px;
+}
+
+.closeNav, .closeNav:hover{
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    top: -5px;
+    right: 12px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 900;
+    z-index: 9999;
+}
+
+
+
+
+
+/*Game Body*/
+.gameBody{
+    font-size: 40px;
+    color: rgba(255,135,0,0.5);
+}
+
+.box{
+    width: 100px;
+    height: 100px; 
+    cursor: pointer; 
+    margin: 5px;
+}
+
+
+.borderBottom{
+    border-bottom: 2px solid rgba(255,135,0,0.5);
+}
+
+
+.borderLeftRight{
+    border-left:  2px solid rgba(255,135,0,0.5);
+    border-right:  2px solid rgba(255,135,0,0.5);
+}
+
+
+.first{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;  
+    -webkit-animation-duration:0.1s;
+    animation-delay: 0.1s;
+}
+
+
+.second{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration:0.3s;
+    animation-delay: 0.3s;
+}
+
+
+.third{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;  
+    -webkit-animation-duration:0.6s;
+    animation-delay: 0.6s;
+}
+
+.fourth{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;  
+    -webkit-animation-duration:0.5s;
+    animation-delay: 0.5s;
+}
+
+
+.fa{
+    padding: 30px;
+}
+
+
+.container-flex{
+    display: flex;
+}
+
+
+.divCenter{
+    width: 350px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/*Game Decider*/
+.decider .glyphicon{
+    font-size: 1.5em;
+    padding: 0px 20px 0px 30px;
+    top: 11px;
+    -webkit-transform: rotate(540deg);
+    -moz-transform: rotate(540deg);    
+    -o-transform: rotate(540deg); 
+    transform: rotate(540deg);
+    
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;    
+    -o-transition: 0.3s all ease; 
+    transition: 0.3s all ease;
+}
+
+
+/*Game Control*/
+.glyphicon{
+    font-size: 3em;
+    padding: 1em 1em 0em 1em;
+}
+
+.glyphicon-user:hover,.glyphicon-refresh:hover, .glyphicon-blackboard:hover{
+    cursor: pointer;
+    color: #ff8700;
+    -webkit-transition: 0.5s all ease-out;
+    -moz-transition: 0.5s all ease-out;    
+    -o-transition: 0.5s all ease-out; 
+    transition: 0.5s all ease-out; 
+}
+
+
+
+.userActive .glyphicon-user, .userActive .glyphicon-refresh, .userActive .glyphicon-blackboard{
+    color: orangered;
+}
+
+@media screen and (max-width:500px) and (min-width:360px){
+  .text_light_small{
+    font-size: 15px;
+    font-weight: 300;
+  }
+    
+    .glyphicon{
+        font-size: 2.5em;
+        padding: 1em 0.5em 0em 0.5em;
+    }
+}
+
+/*Game Footer*/
+footer{
+    margin: 1em 0em 1em 0em;
+}
+
+
+

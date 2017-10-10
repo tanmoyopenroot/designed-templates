@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Retrospect</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar">    
+
+	<div class="header" id="home">
+		<div class="navigation">
+			<nav class="navbar navbar-default navbar-fixed-top">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collasped" data-toggle="collaspe" data-target="#menu">
+							<span class="sr-only">Toggle Navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">Retrospect</a>
+					</div>
+				<div class="container">
+					<div class="collapse navbar-collapse" id="menu">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#home">Home</a></li>
+							<li><a class="pageScroll" href="#about">About</a></li>
+							<li><a class="pageScroll" href="#services">Services</a></li>
+							<li><a class="pageScroll" href="#offers">Offers</a></li>
+							<li><a class="pageScroll" href="#thought">Carousel</a></li>
+							<li><a class="pageScroll" href="#banner2">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>	
+		</div>
+
+		
+		<div class="banner1">
+			<div class="container">
+				<section class="banner_head">
+					<h1>Retrospect</h1>
+					<h2>Designed By Me</h2>
+					<h3>It's the only place you have to live.</h3>
+					<div class="banner_button">
+						<button class="button_0" data-toggle="modal" data-target="#login_signup">Sign Up / Log In</button>
+					</div>
+				</section>
+			</div>
+		</div>	
+	</div>
+
+
+	<div class="modal_login_signup">
+
+		<div class="hidden">
+			<div class="login_form">
+				<div class="form">
+					<h1>Log In</h1>
+					<h2>Place where you can log In!</h2>							
+					<input class="input-text" type="text" name="" placeholder="E-mail *">
+					<input class="input-text" type="password" name="" placeholder="Password *">
+					<input class="input-btn" type="submit" value="Log In">
+				</div>	
+			</div>
+
+
+			<div class="signup_form">
+				<div class="form">
+					<h1>Sign Up</h1>
+					<h2>Place where you can Sign Up!</h2>							
+					<input class="input-text" type="text" name="" placeholder="Name *">
+					<input class="input-text" type="text" name="" placeholder="E-mail *">
+					<input class="input-text" type="password" name="" placeholder="Password *">
+					<div class="checkbox">
+						<label><input class="input-checkbox" type="checkbox"> I agree your terms...</label>
+					</div>
+					<input class="input-btn" type="submit" value="Sign Up">					
+				</div>			
+			</div>			
+		</div>
+
+
+		<div class="modal fade" id="login_signup" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content modal-background">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<div>
+							<ul class="nav nav-tabs" role="tablist">
+								<li class="active"><a id="log_in" aria-controls="log_in" role="tab" data-toggle="tab">Log In</a></li>
+								<li><a  id="sign_up" aria-controls="sign_up" role="tab" data-toggle="tab">Sign Up</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="modal-body">
+						<div class="form">
+							<h1>Log In</h1>
+							<h2>Place where you can log In!</h2>							
+							<input class="input-text" type="text" name="" placeholder="E-mail *">
+							<input class="input-text" type="password" name="" placeholder="Password *">
+							<input class="input-btn" type="submit" value="Log In">
+						</div>
+					</div>
+					<div class="modal-footer"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-12">
+					<img src="img/person.jpg" class="img-circle img-responsive">			
+				</div>
+				<div class="info">
+					<div class="col-md-8 col-sm-12">
+						<h2>I find any communication over non mathematical nature difficult.</h2>
+						<div>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.
+						</div>
+						<div class="about_button">
+							<a class="button_1" href="#">More About Me</a>
+						</div>
+					</div>
+				</div>			
+			</div>
+		</div>	
+	</div>
+
+	<div id="services">
+		<div class="container">
+			<div class="row">
+				<div class="services_head">
+					<h1>Services</h1>
+					<h2>Achieve the best results with our wide variety of options!</h2>
+				</div>
+				<div class="col-md-4">
+					<ul class="list-unstyled services_icons">
+						<li>
+							<span class="fa fa-cogs"></span>
+							<h3>NULLA LUCTUS ELEIFEND</h3>
+							<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula pellentesque.</p>
+						</li>
+						<li>
+							<span class="fa fa-wrench"></span>
+							<h3>ETIAM POSUERE AUGUE</h3>
+							<p>Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat liguala.Maecenas ligula..</p>
+						</li>
+						<li>
+							<span class="fa fa-leaf"></span>
+							<h3>FUSCE ULTRICES FRINGILLA</h3>
+							<p>Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor.</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<ul class="list-unstyled services_icons">
+						<li>
+							<span class="fa fa-cogs"></span>
+							<h3>NULLA LUCTUS ELEIFEND</h3>
+							<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula pellentesque.</p>
+						</li>
+						<li>
+							<span class="fa fa-wrench"></span>
+							<h3>ETIAM POSUERE AUGUE</h3>
+							<p>Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat liguala.</p>
+						</li>
+						<li>
+							<span class="fa fa-leaf"></span>
+							<h3>FUSCE ULTRICES FRINGILLA</h3>
+							<p>Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor.</p>
+						</li>
+					</ul>					
+				</div>
+				<div class="col-md-4">
+					<ul class="list-unstyled services_icons">
+						<li>
+							<span class="fa fa-cogs"></span>
+							<h3>NULLA LUCTUS ELEIFEND</h3>
+							<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula pellentesque.</p>
+						</li>
+						<li>
+							<span class="fa fa-wrench"></span>
+							<h3>ETIAM POSUERE AUGUE</h3>
+							<p>Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat liguala.</p>
+						</li>
+						<li>
+							<span class="fa fa-leaf"></span>
+							<h3>FUSCE ULTRICES FRINGILLA</h3>
+							<p>Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor.</p>
+						</li>
+					</ul>				
+				</div>
+			</div>		
+		</div>
+	</div>
+
+	<div id="offers">
+		<div class="offers_head">
+			<h1>Offers</h1>
+			<h2>Achieve the best results with our wide variety of options!</h2>
+		</div>
+	</div>
+
+	<div class="offers_below">
+		<div class="container">
+			<div class="offer_cards">
+				<div class="row ">
+					<div class="col-md-4">
+						<div class="container block_1">
+							<h3 class="white_light">Today's Schedule</h3>
+							<h4 class="white_light_content">I couldn't be more happy with the results!</h4>
+							<h5 class="white_light_author">Adam Jordan</h5>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="container block_2">
+							<h3 class="white_light">Today's Schedule</h3>
+							<h4 class="white_light_content">I couldn't be more happy with the results!</h4>
+							<h5 class="white_light_author">Adam Jordan</h5>
+						</div>
+					</div>
+					<div class="col-md-4">		
+						<div class="container block_3">
+							<h3 class="white_light">Today's Schedule</h3>
+							<h4 class="white_light_content">I couldn't be more happy with the results!</h4>
+							<h5 class="white_light_author">Adam Jordan</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="thought">
+		<div class="container-fluid">
+			<section class="section2">
+				<div id="text_carousel" class="carousel slide">
+					<div class="carousel-inner">
+						<div class="item active">
+							<div class="item text-center">
+								<i class="icon fa fa-twitter"></i>
+								<h4 class="white_light">To enjoy the glow of good health, you must exercise.</h4>
+								<h4 class="white_light_sub">#health #training #exercise</h4>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item text-center">
+								<i class="icon fa fa-facebook"></i>
+								<h4 class="white_light">Choose your favorite pricing plan and sign up today!</h4>
+								<h4 class="white_light_sub">#favorite #sign #today</h4>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item text-center">
+								<i class="icon fa fa-linkedin"></i>
+								<h4 class="white_light">Shape your body and improve your health.Start Free Trial</h4>
+								<h4 class="white_light_sub">#body #improve #trial</h4>
+							</div>
+						</div>		
+					</div>
+					<a class="left carousel-control" href="#text_carousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> 
+					<a class="right carousel-control" href="#text_carousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+				</div>
+			</section>
+		</div>	
+	</div>
+
+	<div id="banner2">
+		<div class="container-fluid">Let's talk business			
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="contact">
+			<div class="row">
+				<div class="col-md-6">
+					<ul class="list-unstyled contact_info">
+						<li>
+							<span class="fa fa-cogs"></span>
+							<h1>Address: Unknown</h1>
+						</li>
+						<li>
+							<span class="fa fa-wrench"></span>
+							<h1>Phone: 1234567890</h1>	
+						</li>
+						<li>
+							<span class="fa fa-leaf"></span>
+							<h1>Email: qwerty@xyz.com</h1>						
+						</li>
+						<li>
+							<span class="fa fa-wrench"></span>
+							<h1>Phone: 1234567890</h1>	
+						</li>
+						<li>
+							<span class="fa fa-leaf"></span>
+							<h1>Email: qwerty@xyz.com</h1>						
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<div class="form">
+						<input class="input-text" type="text" name="" placeholder="Your Name *">
+						<input class="input-text" type="text" name="" placeholder="Your E-mail *">
+						<textarea class="input-text text-area" cols="0" rows="0" placeholder="Your Message *"></textarea>
+						<input class="input-btn" type="submit" value="send message">
+					</div>
+				</div>			
+			</div>
+		</div>
+	</div>
+
+
+	<footer id="footer">
+		<div class="container">
+			<div class="social_icons">
+				<span class="fa fa-facebook"></span>
+				<span>|</span>
+				<span class="fa fa-twitter"></span>
+				<span>|</span>
+				<span class="fa fa-instagram"></span>
+				<span>|</span>
+				<span class="fa fa-linkedin"></span>			
+			</div>
+			<div class="link">
+				<ul class="list-inline">
+					<li>© <span class="copyright">FUCK YOU</span></li>
+					<li>IMAGE: <span class="image">FUCK YOU</span></li>
+					<li>DESIGN: <span class="design">FUCK YOU</span></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

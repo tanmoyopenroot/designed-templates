@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tic Tac Toe</title>
+        <!--    Icon    -->
+        <link href="favicon.ico" rel="icon">
+        
+        <!--    Stylesheet    -->        
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"> 
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="css/thinker.css"> 
+        <link rel="stylesheet" type="text/css" href="css/style.css">    
+         <!--    Javascript    -->       
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript"  src="js/angular.min.js"></script>
+        <script type="text/javascript"  src="js/angular-animate.min.js"></script>   
+        <script type="text/javascript"  src="js/angular-route.min.js"></script>  
+        <script type="text/javascript"  src="js/angular-sanitize.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+
+        <!--    Directive    -->
+<!--        <script type="text/javascript" src="components/directives/box.js"></script>-->
+        
+        <!--    Controller    -->
+        <script type="text/javascript" src="components/controller/gameController.js"></script> 
+    
+    </head>
+    <body ng-app="gameApp">
+        <div ng-controller="gameController">
+            
+			<nav>
+                <ul class="list-inline floatLeft">
+                    <li><span class="glyphicon glyphicon-align-justify" onclick="onNav()"></span></li>
+                    
+                </ul>                
+                
+                <div id="sidebarWrapper">
+                    <ul class="list-inline text-center shitLeft noSelect">
+                        <li>Single Player</li>
+                        <li>Multi Player</li>
+                        <li>About</li>
+                    </ul>
+                </div>
+                <a class="closeNav noSelect" onclick="offNav()">&times;</a>
+			</nav>
+            
+            <header>
+                <div class="container noSelect">
+                    <h1 class="text_light">Tic Tac Toe</h1> 
+                    <h1 class="text_light_content">You Won't Beat Me. But You Can Try.</h1>
+                    <h1 class="text_light">What's On Your Mind?</h1> 
+                    <div class="boxThink">
+                        <div class="thinking"></div>
+                    </div>               
+                </div>
+            </header>
+            <section>
+                <div class="gameBody">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3">
+                                <div class="divCenter noSelect"> 
+                                    <div class="container-flex">
+                                        <div class="box borderBottom animated fadeInLeft" ng-click="main('1')">
+                                            <div class="box1">
+                                                <i ng-class="box1Value"></i>
+                                            </div>
+                                        </div>
+                                        <div class="box borderLeftRight borderBottom first animated fadeInUp" ng-click="main('2')">
+                                            <div class="box2">
+                                                <i ng-class="box2Value"></i>
+                                            </div>
+                                        </div>
+                                        <div class="box borderBottom animated fadeInRight" ng-click="main('3')">
+                                            <div class="box3">
+                                                <i ng-class="box3Value"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="container-flex">
+                                        <div class="box borderBottom fourth animated fadeInLeft" ng-click="main('4')">
+                                            <div class="box4">
+                                                <i ng-class="box4Value"></i>
+                                            </div>
+                                        </div>
+                                        <div class="box borderLeftRight borderBottom second animated fadeInUp" ng-click="main('5')">
+                                            <div class="box5">
+                                                <i ng-class="box5Value"></i>
+                                            </div>
+                                        </div>
+                                        <div class="box borderBottom fourth animated fadeInRight" ng-click="main('6')">
+                                            <div class="box6">
+                                                <i ng-class="box6Value"></i>
+                                            </div>
+                                        </div>
+                                    </div> 
+
+                                    <div class="container-flex">
+                                        <div class="box animated" ng-click="main('7')">
+                                            <div class="box7">
+                                                <i ng-class="box7Value"></i>
+                                            </div>
+                                        </div>
+                                        <div class="box borderLeftRight third animated fadeInUp" ng-click="main('8')">
+                                            <div class="box8">
+                                                <i ng-class="box8Value"></i>
+                                            </div>
+                                        </div>
+                                        <div class="box" ng-click="main('9')">
+                                            <div class="box">
+                                                <i ng-class="box9Value"></i>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>                            
+                            </div> 
+                            <div class="col-md-2">
+                                <div class="decider">
+                                    <ul class="list-inline noSelect">
+                                        <li><h1 class="text_light_small">Player</h1></li>
+                                        <li><h1 class="text_light">{{spWin}}</h1></li>
+                                    </ul>
+                                        <span ng-class="1<0? 'glyphicon glyphicon-triangle-bottom' : 'glyphicon glyphicon-triangle-top'"></span>
+                                    <ul class="list-inline noSelect">
+                                        <li><h1 class="text_light_small">CPU</h1></li>
+                                        <li><h1 class="text_light">{{cpuWin}}</h1></li>
+                                    </ul>                                                                   
+                                </div>                           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+
+            
+            <section>
+                <div class="gameOption noSelect">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <div ng-class="usrOption ? 'userActive' : 'userDeactive'" ng-click="actUser()">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                    <h4 class="text_light_small">I'll Start Over</h4>                    
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="restart" ng-click="disRestart()" ng-model="resOption">
+                                    <span class="glyphicon glyphicon-refresh"></span>
+                                    <h4 class="text_light_small">Scared Huh?</h4>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div ng-class="cpuOption ? 'userActive' : 'userDeactive' " ng-click="actCpu()">
+                                    <span class="glyphicon glyphicon-blackboard"></span>
+                                    <h4 class="text_light_small text-center">U Start Over</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <footer>
+                <div class="container">
+                    <ul class="list-inline noSelect">
+                        <li> <h1 class="text_light">Designed By</h1></li>
+                        <li> <h1 class="text_light_content">Tanmoy Bhowmik</h1></li>
+                        <li> <h1 class="text_light">@Openroot</h1></li>    
+                    </ul>                
+                </div>                   
+            </footer>       
+    </body>
+</html>
